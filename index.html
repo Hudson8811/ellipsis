@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Другие кодировки плохо поддерживаются или имеют дыры -->
+    <meta charset="UTF-8">
+    <!-- Режим работы Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Для мобилок -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- META-ТЕГИ ДЛЯ ПОИСКОВИКОВ -->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="" />
+
+    <!-- FAVICON -->
+    
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Epsilon</title>
+</head>
+
+<body>
+
+<!-------------- HEADER -------------->
+
+<header class="header">
+    <!-- <img class="header__bg" src="./img/header/bg.jpg" alt="header__bg"> -->
+    <video class="header__video" playsinline autoplay loop muted poster="./img/poster-video.png">
+        <source src="./video/header_bg.mp4" type='video/mp4'>
+        WARNING: Your browser does not support the video tag!
+    </video>
+    <div class="container">
+        <!-- NAV -->
+        <div class="header-nav">
+            <a class="header-nav__logo" href="#">
+                <img src="./img/logo.png" alt="logo">
+            </a>
+            <nav class="header-nav__nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <span class="nav-item__text">Платформа</span>
+                        <div class="navbar__dropdown">
+                            <div class="dropdown__section">
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">
+                                      <a class="dropdown-item__link link_underline" href="">
+                                        <div class="dropdown-item__ico"> 
+                                          <img src="./img/icon/menu/platform/techo.svg" alt="menu__item">
+                                        </div> 
+                                        <span class="dropdown-item__text"> Технология </span>
+                                      </a> 
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icon/menu/platform/data.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Данные </span>
+                                        </a> 
+                                      </li>
+                                      <li class="dropdown-item">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icon/menu/platform/service.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Сервисы </span>
+                                        </a> 
+                                      </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-item__text">Решения</span>
+                        <div class="navbar__dropdown navbar__dropdown_flex">
+                            <div class="dropdown__tab">
+                                <ul class="tab__list">
+                                    <li class="tab__item">
+                                        <a class="tab__link active" href="#tab-industry" data-tab="tab-industry">
+                                            <span>По</span>
+                                            <span>Отрасли</span>
+                                        </a>
+                                    </li>
+                                    <li class="tab__item">
+                                        <a class="tab__link" href="#tab-use" data-tab="tab-use">
+                                            <span>По</span>
+                                            <span>Сценарию использования</span>
+                                        </a>
+                                    </li>
+                                    <li class="tab__item">
+                                        <a class="tab__link" href="#tab-role" data-tab="tab-role">
+                                            <span>По</span>
+                                            <span>Роли</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown__section dropdown__section_tab active" id="tab-industry">
+                                <ul class="dropdown-list dropdown-list_flex">
+                                    <li class="dropdown-item dropdown-item_flex">
+                                      <a class="dropdown-item__link link_underline" href="">
+                                        <div class="dropdown-item__ico"> 
+                                          <img src="./img/icon/menu/solutions/industry/city.svg" alt="menu__item">
+                                        </div> 
+                                        <span class="dropdown-item__text"> Города и правительство </span>
+                                      </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icon/menu/solutions/industry/wood.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Окружающая среда </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/solutions/industry/marketing.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Маркетинг и реклама </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/solutions/industry/tele.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Телекоммуникации </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/solutions/industry/money.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Финансовые услуги </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/solutions/industry/health.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Здоровье и фармацевтика </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icon/menu/solutions/industry/house.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Недвижимость </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icon/menu/solutions/industry/car.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Транспорт </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/solutions/industry/cart.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Потребительские товары </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/solutions/industry/location.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Логистика </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/solutions/industry/trading.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Розничная торговля </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/solutions/industry/pay.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Коммунальные услуги </span>
+                                        </a> 
+                                    </li>
+                                </ul>
+                                <a class="btn_tab btn" href="">
+                                    <span>ВСЕ ОТРАСЛИ</span>
+                                </a>
+                            </div>
+                            <div class="dropdown__section dropdown__section_tab" id="tab-use">
+                                <ul class="dropdown-list dropdown-list_flex">
+                                    <li class="dropdown-item dropdown-item_flex">
+                                      <a class="dropdown-item__link link_underline" href="">
+                                        <div class="dropdown-item__ico"> 
+                                          <img src="./img/icon/menu/solutions/use/map_location.svg" alt="menu__item">
+                                        </div> 
+                                        <span class="dropdown-item__text"> Выбор площадки </span>
+                                      </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icon/menu/solutions/use/med.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Медицинская аналитика </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/solutions/use/location_arrow.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Геомаркетинг </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/solutions/use/card.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Картографирование помещений </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/solutions/use/document.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Оптимизация цепочек поставок </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/solutions/use/analytics.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Аналитика Интернета вещей </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icon/menu/solutions/use/model.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Моделирование катастроф </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icon/menu/solutions/use/content-network.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Развертывание сети </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/solutions/use/data.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Монетизация данных </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/solutions/use/plan.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Планировка территории </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/solutions/use/wood.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Управление окружающей средой </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/solutions/use/building.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Анализ рынка недвижимости  </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/solutions/use/mask.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Обнаружение мошенничества </span>
+                                        </a> 
+                                    </li>
+                                </ul>
+                                <a class="btn_tab btn" href="">
+                                    <span>ВСЕ ВАРИАНТЫ ИСПОЛЬЗОВАНИЯ</span>
+                                </a>
+                            </div>
+                            <div class="dropdown__section dropdown__section_tab" id="tab-role">
+                                <ul class="dropdown-list ">
+                                    <li class="dropdown-item dropdown-item_flex">
+                                      <a class="dropdown-item__link link_underline" href="">
+                                        <div class="dropdown-item__ico"> 
+                                          <img src="./img/icon/menu/solutions/role/user-check.svg" alt="menu__item">
+                                        </div> 
+                                        <span class="dropdown-item__text"> Бизнес-пользователь </span>
+                                      </a> 
+                                    </li>
+                                    <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icon/menu/solutions/role/data-table.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Специалист по данным </span>
+                                        </a> 
+                                      </li>
+                                      <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icon/menu/solutions/role/array.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> Разработчик </span>
+                                        </a> 
+                                      </li>
+                                      <li class="dropdown-item dropdown-item_flex">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                          <div class="dropdown-item__ico"> 
+                                            <img src="./img/icon/menu/solutions/role/world.svg" alt="menu__item">
+                                          </div> 
+                                          <span class="dropdown-item__text"> ГИС-профессионал </span>
+                                        </a> 
+                                      </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-item__text">Документация</span>
+                        <div class="navbar__dropdown">
+                            <div class="dropdown__section dropdown__section_pr-small">
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">
+                                      <a class="dropdown-item__link link_underline" href="">
+                                        <div class="dropdown-item__ico"> 
+                                          <img src="./img/icon/menu/document/document.svg" alt="menu__item">
+                                        </div>
+                                        <div class="dropdown-item__text-wrapper">
+                                            <span class="dropdown-item__text"> Документация </span>
+                                            <p class="dropdown-item__description">Документация и ресурсы для максимально эффективного использования Epsilon</p>
+                                        </div>
+                                      </a> 
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/document/metod.svg" alt="menu__item">
+                                            </div>
+                                            <div class="dropdown-item__text-wrapper">
+                                                <span class="dropdown-item__text"> Методические рекомендации </span>
+                                                <p class="dropdown-item__description">Пошаговые инструкции, чтобы быстро стать экспертом</p>
+                                            </div>
+                                        </a> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="dropdown-item__link link_underline link_underline_main" href="">
+                            <span class="dropdown-item__text"> Цены </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-item__text">О компании</span>
+                        <div class="navbar__dropdown">
+                            <div class="dropdown__section">
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">
+                                      <a class="dropdown-item__link link_underline" href="">
+                                        <div class="dropdown-item__ico"> 
+                                          <img src="./img/icon/menu/company/blog.svg" alt="menu__item">
+                                        </div> 
+                                        <span class="dropdown-item__text"> Блог </span>
+                                      </a> 
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/company/stories.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Истории клиентов </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/company/career.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Карьера </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/company/us.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> О нас </span>
+                                        </a> 
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-item__link link_underline" href="">
+                                            <div class="dropdown-item__ico"> 
+                                                <img src="./img/icon/menu/company/partners.svg" alt="menu__item">
+                                            </div> 
+                                            <span class="dropdown-item__text"> Партнерам </span>
+                                        </a> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="header-nav__btn btn" href="">
+                            <span>Войти</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- BURGER -->
+            <div class="burger">
+                <span class="burger__line"></span>
+            </div>
+        </div>
+        <!-- TOP -->
+        <div class="header__banner">
+            <h1 class="header__title">Пространственная аналитика для современного стека данных</h1>
+            <p class="header__subtitle">Ведущая облачная платформа Location Intelligence</p>
+            <a class="header__btn btn btn_yellow" href="">
+                <span>Запросить демонстрацию</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-------------- SLIDER -------------->
+
+<section class="slider">
+    <div class="container">
+        <ul class="slide-wrapper">
+            <!-- 1 -->
+            <li class="slide" id="slide">
+                <div class="slide__left">
+                    <h4 class="slide__subtitle">Нам доверяют лидеры</h4>
+                    <h3 class="slide__title">Проанализировано покрытие сетей связи для 3 миллионов пользователей</h3>
+                    <img class="slide__map" src="./img/slider/1/map.png" alt="map">
+                </div>
+                <div class="slide__right">
+                    <img class="slide__logo" src="./img/slider/1/slide_logo.png" alt="client_logo">
+                    <div class="slide__description">
+                        <p class="slide__text">«Благодаря широким возможностям облачной платформы Epsilon Metrics, мы смогли проанализировать качество покрытия сетями связи в Республике Крым и г. Севастополь, а также запланировать размещение телекоммуникационных башен в местах с недостаточным покрытием».</p>
+                        <p class="slide__caption">Константин Попов<br>Технический Директор КРИТ</p>
+                        <a class="slide__btn btn btn_yellow" href="">
+                            <span>Посмотреть описание</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <!-- 2 -->
+            <li class="slide" id="slide">
+                <div class="slide__left">
+                    <h4 class="slide__subtitle">Нам доверяют лидеры</h4>
+                    <h3 class="slide__title">Проанализировано покрытие сетей связи для 3 миллионов пользователей</h3>
+                    <img class="slide__map" src="./img/slider/2/map.png" alt="map">
+                </div>
+                <div class="slide__right">
+                    <img class="slide__logo" src="./img/slider/1/slide_logo.png" alt="client_logo">
+                    <div class="slide__description">
+                        <p class="slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus illum suscipit deserunt voluptatem dicta odit ut reprehenderit molestiae similique iusto nihil quis praesentium, facere odio, quo iure dolor neque quaerat?</p>
+                        <p class="slide__caption">Константин Попов<br>Технический Директор КРИТ</p>
+                        <a class="slide__btn btn btn_yellow" href="">
+                            <span>Посмотреть описание</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <!-- 3 -->
+            <li class="slide" id="slide">
+                <div class="slide__left">
+                    <h4 class="slide__subtitle">Нам доверяют лидеры</h4>
+                    <h3 class="slide__title">Проанализировано покрытие сетей связи для 3 миллионов пользователей</h3>
+                    <img class="slide__map" src="./img/slider/3/map.png" alt="map">
+                </div>
+                <div class="slide__right">
+                    <img class="slide__logo" src="./img/slider/1/slide_logo.png" alt="client_logo">
+                    <div class="slide__description">
+                        <p class="slide__text">Delectus cum, eligendi asperiores deleniti molestiae ipsam enim impedit quas laborum a corrupti culpa voluptatibus est praesentium, numquam fugiat! Quam aut porro deleniti cum, hic rerum explicabo saepe consectetur accusantium.</p>
+                        <p class="slide__caption">Константин Попов<br>Технический Директор КРИТ</p>
+                        <a class="slide__btn btn btn_yellow" href="">
+                            <span>Посмотреть описание</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="pagination">
+            <a class="pagination__arrow arrow__left" id="paginArrowL" href="">
+                <img src="./img/slider/arrow.svg" alt="arrow__pag">
+            </a>
+            <a class="pagination__arrow arrow__right" id="paginArrowR" href="">
+                <img src="./img/slider/arrow.svg" alt="arrow__pag">
+            </a>
+            <div class="pagination__title">
+                <span class="pagination__number" id="paginNum"></span>
+                 / 
+                <span class="pagination__total" id="paginTotal"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-------------- SLIDER-SWIPER -------------->
+<div class="container">
+    <section class="_slider">
+        <div class="_container swiper-2">
+            <ul class="_slide-wrapper swiper-wrapper">
+                <!-- 1 -->
+                <li class="_slide swiper-slide" id="slide">
+                    <div class="slide__left">
+                        <h4 class="slide__subtitle">Нам доверяют лидеры</h4>
+                        <h3 class="slide__title">Проанализировано покрытие сетей связи для 3 миллионов пользователей</h3>
+                        <img class="slide__map" src="./img/slider/1/map.png" alt="map">
+                    </div>
+                    <div class="slide__right">
+                        <img class="slide__logo" src="./img/slider/1/slide_logo.png" alt="client_logo">
+                        <div class="slide__description">
+                            <p class="slide__text">«Благодаря широким возможностям облачной платформы Epsilon Metrics, мы смогли проанализировать качество покрытия сетями связи в Республике Крым и г. Севастополь, а также запланировать размещение телекоммуникационных башен в местах с недостаточным покрытием».</p>
+                            <p class="slide__caption">Константин Попов<br>Технический Директор КРИТ</p>
+                            <a class="slide__btn btn btn_yellow" href="">
+                                <span>Посмотреть описание</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <!-- 2 -->
+                <li class="_slide swiper-slide" id="slide">
+                    <div class="slide__left">
+                        <h4 class="slide__subtitle">Нам доверяют лидеры</h4>
+                        <h3 class="slide__title">Проанализировано покрытие сетей связи для 3 миллионов пользователей</h3>
+                        <img class="slide__map" src="./img/slider/2/map.png" alt="map">
+                    </div>
+                    <div class="slide__right">
+                        <img class="slide__logo" src="./img/slider/1/slide_logo.png" alt="client_logo">
+                        <div class="slide__description">
+                            <p class="slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus illum suscipit deserunt voluptatem dicta odit ut reprehenderit molestiae similique iusto nihil quis praesentium, facere odio, quo iure dolor neque quaerat?</p>
+                            <p class="slide__caption">Константин Попов<br>Технический Директор КРИТ</p>
+                            <a class="slide__btn btn btn_yellow" href="">
+                                <span>Посмотреть описание</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <!-- 3 -->
+                <li class="_slide swiper-slide" id="slide">
+                    <div class="slide__left">
+                        <h4 class="slide__subtitle">Нам доверяют лидеры</h4>
+                        <h3 class="slide__title">Проанализировано покрытие сетей связи для 3 миллионов пользователей</h3>
+                        <img class="slide__map" src="./img/slider/3/map.png" alt="map">
+                    </div>
+                    <div class="slide__right">
+                        <img class="slide__logo" src="./img/slider/1/slide_logo.png" alt="client_logo">
+                        <div class="slide__description">
+                            <p class="slide__text">Delectus cum, eligendi asperiores deleniti molestiae ipsam enim impedit quas laborum a corrupti culpa voluptatibus est praesentium, numquam fugiat! Quam aut porro deleniti cum, hic rerum explicabo saepe consectetur accusantium.</p>
+                            <p class="slide__caption">Константин Попов<br>Технический Директор КРИТ</p>
+                            <a class="slide__btn btn btn_yellow" href="">
+                                <span>Посмотреть описание</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+            <!-- If we need navigation buttons -->
+            <div class="_arrows">
+                <div class="swiper-button-prev">
+                    <img src="./img/slider/arrow.svg" alt="arrow__pag">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="./img/slider/arrow.svg" alt="arrow__pag">
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+</div>
+<!-------------- Benefits -------------->
+
+<section class="benefits">
+    <div class="container">
+        <div class="benefits__content">
+            <div class="content__info">
+                <h6 class="info__subtitle">Облачное решение</h6>
+                <h2 class="info__title">Откройте для себя преимущества облачных ГИС</h2>
+                <p class="info__text">Платформа Epsilon Metrics предлагает облачные, самостоятельные и гибридные развертывания, удовлетворяя потребности компаний любого размера.</p>
+                <a class="benefits__btn btn btn_yellow" href="">
+                    <span>Узнать, как это работает</span>
+                </a>
+            </div>
+            <div class="content__img">
+                <img class="benefits__img" src="https://i1.sndcdn.com/artworks-000476107998-fqqgdc-t500x500.jpg" alt="">
+            </div>
+            <a class="benefits__btn_bottom btn btn_yellow" href="">
+                <span>Узнать, как это работает</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-------------- ANALYSIS -------------->
+
+<section class="analysis">
+    <div class="container">
+        <div class="analysis__content">
+            <h2 class="analysis__title">Ускорьте пространственный анализ</h2>
+            <p class="analysis__text">Специалисты по обработке и анализу данных, разработчики и аналитики решают пространственные задачи, используя наши данные и анализ, чтобы понять, где и почему что-то происходит, оптимизировать бизнес-процессы и предсказать будущие результаты. Наша платформа поможет вам сделать это за 4 простых шага:</p>
+            <ul class="analysis__list">
+                <!-- 1 -->
+                <li class="list__item">
+                    <a class="item__link" href="">
+                        <div class="item__circle">1</div>
+                        <div class="item__ico">
+                            <img class="item__img" src="./img/icon/analysis/cloud.svg" alt="">
+                        </div>
+                        <h3 class="item__title">Подключение к облаку и интеграция</h3>
+                    </a>
+                </li>
+                <!-- 2 -->
+                <li class="list__item">
+                    <a class="item__link" href="">
+                        <div class="item__circle">2</div>
+                        <div class="item__ico">
+                            <img class="item__img" src="./img/icon/analysis/data.svg" alt="">
+                        </div>
+                        <h3 class="item__title">Обогащение данных</h3>
+                    </a>
+                </li>
+                <!-- 3 -->
+                <li class="list__item">
+                    <a class="item__link" href="">
+                        <div class="item__circle">3</div>
+                        <div class="item__ico">
+                            <img class="item__img" src="./img/icon/analysis/analysis.svg" alt="">
+                        </div>
+                        <h3 class="item__title">Пространственный анализ</h3>
+                    </a>
+                </li>
+                <!-- 4 -->
+                <li class="list__item">
+                    <a class="item__link" href="">
+                        <div class="item__circle">4</div>
+                        <div class="item__ico">
+                            <img class="item__img" src="./img/icon/analysis/visual.svg" alt="">
+                        </div>
+                        <h3 class="item__title">Решения и визуализация</h3>
+                    </a>
+                </li>
+            </ul>
+            <a class="analysis__btn btn btn_yellow">
+                <span>Узнать больше</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-------------- ACCESS-SWIPER -------------->
+
+<section class="swip-access">
+    <h2 class="swip-access__title">Доступ к наборам геопространственных данных</h2>
+    <p class="swip-access__text">Наш набор данных упрощает для корпоративных организаций доступ к общедоступным и премиальным наборам данных, улучшая их пространственный анализ с помощью таких данных, как точки интереса, мобильность людей, транзакции по кредитным картам и многое другое.</p>
+    <div class="swiper1">
+        <ul class="swip-carousel swiper-wrapper">
+            <!-- 1 -->
+            <li class="swip-carousel__item swiper-slide">
+                <div class="swip-carousel__item-wrapper">
+                    <img class="swip-carousel-item__bg" src="./img/access/human.jpg" alt="">
+                    <div class="swip-carousel-item__circle">
+                        <img class="swip-carousel-item__ico" src="./img/access/icon/human.svg" alt="">
+                    </div>
+                    <h3 class="swip-carousel-item__title">
+                        <a class="swip-carousel-item__link" href="">Человеческая мобильность</a>
+                    </h3>
+                </div>
+            </li>
+            <!-- 1 -->
+            <li class="swip-carousel__item swiper-slide">
+                <div class="swip-carousel__item-wrapper">
+                    <img class="swip-carousel-item__bg" src="./img/access/demogr.jpg" alt="">
+                    <div class="swip-carousel-item__circle">
+                        <img class="swip-carousel-item__ico" src="./img/access/icon/graph.svg" alt="">
+                    </div>
+                    <h3 class="swip-carousel-item__title">
+                        <a class="swip-carousel-item__link" href="">Демография</a>
+                    </h3>
+                </div>
+            </li>
+            <!-- 1 -->
+            <li class="swip-carousel__item swiper-slide">
+                <div class="swip-carousel__item-wrapper">
+                    <img class="swip-carousel-item__bg" src="./img/access/home.jpg" alt="">
+                    <div class="swip-carousel-item__circle">
+                        <img class="swip-carousel-item__ico" src="./img/access/icon/house.svg" alt="">
+                    </div>
+                    <h3 class="swip-carousel-item__title">
+                        <a class="swip-carousel-item__link" href="">Жилье</a>
+                    </h3>
+                </div>
+            </li>
+            <!-- 1 -->
+            <li class="swip-carousel__item swiper-slide">
+                <div class="swip-carousel__item-wrapper">
+                    <img class="swip-carousel-item__bg" src="./img/access/road.jpg" alt="">
+                    <div class="swip-carousel-item__circle">
+                        <img class="swip-carousel-item__ico" src="./img/access/icon/road.svg" alt="">
+                    </div>
+                    <h3 class="swip-carousel-item__title">
+                        <a class="swip-carousel-item__link" href="">Дорожное движение</a>
+                    </h3>
+                </div>
+            </li>
+            <!-- 1 -->
+            <li class="swip-carousel__item swiper-slide">
+                <div class="swip-carousel__item-wrapper">
+                    <img class="swip-carousel-item__bg" src="./img/access/human.jpg" alt="">
+                    <div class="swip-carousel-item__circle">
+                        <img class="swip-carousel-item__ico" src="./img/access/icon/human.svg" alt="">
+                    </div>
+                    <h3 class="swip-carousel-item__title">
+                        <a class="swip-carousel-item__link" href="">Человеческая мобильность 2</a>
+                    </h3>
+                </div>
+            </li>
+            <!-- 1 -->
+            <li class="swip-carousel__item swiper-slide">
+                <div class="swip-carousel__item-wrapper">
+                    <img class="swip-carousel-item__bg" src="./img/access/demogr.jpg" alt="">
+                    <div class="swip-carousel-item__circle">
+                        <img class="swip-carousel-item__ico" src="./img/access/icon/graph.svg" alt="">
+                    </div>
+                    <h3 class="swip-carousel-item__title">
+                        <a class="swip-carousel-item__link" href="">Демография 2</a>
+                    </h3>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <a class="swip-access__btn btn btn_yellow">
+        <span>Изучить данные</span>
+    </a>
+</section>
+
+
+<!-------------- COMMUNITY -------------->
+
+<section class="community">
+    <div class="container">
+        <div class="community__content">
+            <h2 class="community__title">Присоединяйтесь к сообществу</h2>
+            <ul class="blog__list">
+                <!-- 1 -->
+                <li class="blog__item">
+                    <img class="blog-item__img" src="./img/community/1.jpg" alt="">
+                    <h5 class="blog-item__subtitle">Блог</h5>
+                    <h3 class="blog-item__title">Логистика и цепи поставок в жанре магического реализма</h3>
+                    <p class="blog-item__text">В предыдущей статье я описала применение технологий locationintelligence для определения оптимального месторасположения дарксторов. В следующей – опишу вторую ключевую часть логистики последней мили - решений для планирования оптимальных маршрутов курьеров с учётом пробок и других данных.</p>
+                    <a class="community__btn btn btn_inline">
+                        <span>Читать далее</span>
+                    </a>
+                </li>
+                <!-- 2 -->
+                <li class="blog__item">
+                    <img class="blog-item__img" src="./img/community/2.jpg" alt="">
+                    <h5 class="blog-item__subtitle">Блог</h5>
+                    <h3 class="blog-item__title">Location Intelligence</h3>
+                    <p class="blog-item__text">Направление «Location Intelligence» не назовешь новым или инновационным. Технология появилась на кривой «Gartner HypeCycleof Emerging Technologies» в далёком 2013-м году. Его старшие родственники BI и геоинформационные системы (ГИСы) тоже широко используются уже не первый десяток лет. В военно-промышленном комплексе технологии LI активно использовались и того раньше.</p>
+                    <a class="community__btn btn btn_inline">
+                        <span>Читать далее</span>
+                    </a>
+                </li>
+                <!-- 3 -->
+                <li class="blog__item">
+                    <img class="blog-item__img" src="./img/community/3.jpg" alt="">
+                    <h5 class="blog-item__subtitle">Блог</h5>
+                    <h3 class="blog-item__title">Как Location Intelligence поможет определить, где разместить дарксторы</h3>
+                    <p class="blog-item__text">В Москве за 15 минут привезут заказ из Яндекс. Лавки или Самоката, маркетплейсы и крупные интернет-магазины научились делать экспресс-доставку в течение часа (используя свои собственные или партнерские курьерские или транспортно-логистические службы). Доставка в день заказа в заданный часовой интервал и подавно стала новой нормой онлайн ритейла.</p>
+                    <a class="community__btn btn btn_inline">
+                        <span>Читать далее</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-------------- FEEDBACK -------------->
+
+<section class="feedback">
+    <div class="container">
+        <div class="feedback__content">
+            <h4 class="feedback__subtitle">Поговорите с нами</h4>
+            <h2 class="feedback__title">Запросить демонстрацию</h2>
+            <form
+                class="form-feedback"
+                action=""
+                method="post"
+                accept-charset="UTF-8"
+                name="form-feedback"
+                id="form-feedback"
+                novalidate
+            >
+                <fieldset class="form-fieldset" form="form-feedback">
+                    <div class="input-group input-group_small">
+                        <input class="input-group__input" type="text" name="firstname" id="firstname" form="form-feedback" placeholder=" " required>
+                        <label class="input-group__label" for="firstname">Имя</label>
+                    </div>
+                    <div class="input-group input-group_small">
+                        <input class="input-group__input" type="text" name="lastname" id="lastname" form="form-feedback" placeholder=" " required>
+                        <label class="input-group__label" for="lastname">Фамилия</label>
+                    </div>
+                    <div class="input-group">
+                        <input class="input-group__input" type="text" name="company" id="company" form="form-feedback" placeholder=" " required>
+                        <label class="input-group__label" for="company">Организация</label>
+                    </div>
+                    <div class="input-group">
+                        <select class="input-group__input input-group__select" name="role" id="role" form="form-feedback">
+                            <option disabled selected>Выбрать...</option>
+                            <option class="select__item" value="businessUser">Бизнес-пользователь</option>
+                            <option class="select__item" value="director">Директор</option>
+                            <option class="select__item" value="engineer">Инженер</option>
+                        </select>
+                        <div class="arrow-select"></div>
+                        <label class="input-group__label" for="role">Ваша роль в организации?</label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-fieldset" form="form-feedback">
+                    <div class="input-group">
+                        <input class="input-group__input" type="email" name="email" id="email" form="form-feedback" placeholder=" " required>
+                        <label class="input-group__label" for="email">Корпоративная почта</label>
+                    </div>
+                    <div class="input-group">
+                        <select class="input-group__input input-group__select" name="employees" id="employees" form="form-feedback" required>
+                            <option disabled selected>Выбрать...</option>
+                            <option class="select__item" value="1-5">1-5</option>
+                            <option class="select__item" value="5-25">5-25</option>
+                            <option class="select__item" value="25-50">25-50</option>
+                            <option class="select__item" value="50-100">50-100</option>
+                            <option class="select__item" value="100-500">100-500</option>
+                            <option class="select__item" value="500-1.000">500-1.000</option>
+                            <option class="select__item" value="1.000-10.000">1.000-10.000</option>
+                            <option class="select__item" value="10.000-100.000">10.000-100.000</option>
+                            <option class="select__item" value="100.000+">100.000+</option>
+                        </select>
+                        <div class="arrow-select"></div>
+                        <label class="input-group__label" for="employees">Численность персонала</label>
+                    </div>
+                    <div class="input-group input-group_mb">
+                        <input class="input-group__checkbox" type="checkbox" name="subscription" id="subscription" form="form-feedback">
+                        <label class="input-group__label_text" for="subscription">Да, я хотел бы получать маркетинговые сообщения о продуктах, услугах и мероприятиях Epsilon Metrics. Я могу отписаться в любой момент.</label>
+                    </div>
+                    <p class="form-feedback__text">Регистрируясь, я подтверждаю, что мои личные данные будут обрабатываться в соответствии с Соглашением о конфиденциальности.</p>
+                    <button class="form-feedback__btn btn btn_yellow" type="submit">
+                        <span>Запросить демонстрацию</span>
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-------------- FOOTER -------------->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img class="f-logo__main" src="./img/footer/logo_footer.png" alt="logo">
+                <p class="f-logo__text">Участник</p>
+                <img class="f-logo__cluster" src="./img/footer/moscow_cluster.png" alt="moscow_cluster">
+            </div>
+            <div class="footer__menu">
+                <div class="f-menu__item">
+                    <h4 class="f-item__title">Платформа</h4>
+                    <ul class="f-item__list">
+                        <li class="f-item">
+                            <a href="">Технология</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Данные</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Сервисы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-menu__item">
+                    <h4 class="f-item__title">О компании</h4>
+                    <ul class="f-item__list">
+                        <li class="f-item">
+                            <a href="">Блог</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Истории клиентов</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Карьера</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">О нпс</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Партнерам</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Пользовательское соглашение</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-menu__item">
+                    <h4 class="f-item__title">Документация</h4>
+                    <ul class="f-item__list">
+                        <li class="f-item">
+                            <a href="">Документация</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Методические рекомендации</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-menu__item">
+                    <h4 class="f-item__title">Решения</h4>
+                    <h5 class="f-item__subtitle">По отрасли</h5>
+                    <ul class="f-item__list">
+                        <li class="f-item">
+                            <a href="">Города и правительство</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Маркетинг и реклама</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Финансовые услуги</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Недвижимость</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Потребительские товары</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Розничная торговля</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Окружающая среда</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Телекоммуникации</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Здоровье и фармацевтика</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Транспорт</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Логистика</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Коммунальные услуги</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-menu__item">
+                    <h4 class="f-item__title">&nbsp;</h4>
+                    <h5 class="f-item__subtitle">По сценарию<br>использования</h5>
+                    <ul class="f-item__list">
+                        <li class="f-item">
+                            <a href="">Города и правительство</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Маркетинг и реклама</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Финансовые услуги</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Потребительские товары</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Розничная торговля</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Окружающая среда</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Телекоммуникации</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Здоровье и фармацевтика</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Транспорт</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Логистика</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Коммунальные услуги</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Планировка территории</a>
+                        </li>
+                        <li class="f-item">
+                            <a href="">Анализ рынка недвижимости</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="f-bottom__content">
+                <span class="f-bottom__copyright">@ Epsilon Metrics 2022</span>
+                <span class="f-bottom__slogan">Превращаем геоданные в умные идеи!</span>
+                <a class="social__link" href="">
+                    <img class="social__vk" src="./img/icon/social/vk.svg" alt="VK">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/menu-tabs.js"></script>
+<script src="./js/burger.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/app.js"></script>
+</body>
+
+</html>

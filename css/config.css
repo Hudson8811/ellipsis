@@ -1,0 +1,41 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+}
+
+body {
+  max-width: 1400px;
+  min-width: 320px;
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+}
+
+body.lock {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Другие кодировки плохо поддерживаются или имеют дыры -->
+	<meta charset="UTF-8">
+	<!-- Режим работы Internet Explorer -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Для мобилок -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- FONTs -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@400;600;700;800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+	<!-- META-ТЕГИ ДЛЯ ПОИСКОВИКОВ -->
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="robots" content="" />
+
+	<!-- FAVICON -->
+
+
+	<!-- Стили -->
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Epsilon</title>
+</head>
+
+<body>
+	<!-------------- HEADER -------------->
+
+	<header class="header header-docs">
+		<div class="container">
+			<!-- NAV -->
+			<div class="header-nav">
+				<a class="header-nav__logo" href="#">
+					<img src="./img/logo.png" alt="logo">
+				</a>
+				<nav class="header-nav__nav">
+					<ul class="nav-list">
+						<li class="nav-item">
+							<span class="nav-item__text">Платформа</span>
+							<div class="navbar__dropdown">
+								<div class="dropdown__section">
+									<ul class="dropdown-list">
+										<li class="dropdown-item">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/platform/techo.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Технология </span>
+											</a>
+										</li>
+										<li class="dropdown-item">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/platform/data.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Данные </span>
+											</a>
+										</li>
+										<li class="dropdown-item">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/platform/service.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Сервисы </span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<span class="nav-item__text">Решения</span>
+							<div class="navbar__dropdown navbar__dropdown_flex">
+								<div class="dropdown__tab">
+									<ul class="tab__list">
+										<li class="tab__item">
+											<a class="tab__link active" href="#tab-industry" data-tab="tab-industry">
+												<span>По</span>
+												<span>Отрасли</span>
+											</a>
+										</li>
+										<li class="tab__item">
+											<a class="tab__link" href="#tab-use" data-tab="tab-use">
+												<span>По</span>
+												<span>Сценарию использования</span>
+											</a>
+										</li>
+										<li class="tab__item">
+											<a class="tab__link" href="#tab-role" data-tab="tab-role">
+												<span>По</span>
+												<span>Роли</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="dropdown__section dropdown__section_tab active" id="tab-industry">
+									<ul class="dropdown-list dropdown-list_flex">
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/industry/city.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Города и правительство </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/industry/wood.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Окружающая среда </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/industry/marketing.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Маркетинг и реклама </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/industry/tele.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Телекоммуникации </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/industry/money.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Финансовые услуги </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/industry/health.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Здоровье и фармацевтика </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/industry/house.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Недвижимость </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/industry/car.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Транспорт </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/industry/cart.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Потребительские товары </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/industry/location.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Логистика </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/industry/trading.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Розничная торговля </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/industry/pay.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Коммунальные услуги </span>
+											</a>
+										</li>
+									</ul>
+									<a class="btn_tab btn" href="">
+										<span>ВСЕ ОТРАСЛИ</span>
+									</a>
+								</div>
+								<div class="dropdown__section dropdown__section_tab" id="tab-use">
+									<ul class="dropdown-list dropdown-list_flex">
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/use/map_location.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Выбор площадки </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/use/med.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Медицинская аналитика </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/use/location_arrow.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Геомаркетинг </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/use/card.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Картографирование помещений </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/use/document.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Оптимизация цепочек поставок </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/use/analytics.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Аналитика Интернета вещей </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/use/model.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Моделирование катастроф </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/use/content-network.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Развертывание сети </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/use/data.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Монетизация данных </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/use/plan.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Планировка территории </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/use/wood.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Управление окружающей средой </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/use/building.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Анализ рынка недвижимости </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/use/mask.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Обнаружение мошенничества </span>
+											</a>
+										</li>
+									</ul>
+									<a class="btn_tab btn" href="">
+										<span>ВСЕ ВАРИАНТЫ ИСПОЛЬЗОВАНИЯ</span>
+									</a>
+								</div>
+								<div class="dropdown__section dropdown__section_tab" id="tab-role">
+									<ul class="dropdown-list ">
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/role/user-check.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Бизнес-пользователь </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/role/data-table.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Специалист по данным </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/role/array.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Разработчик </span>
+											</a>
+										</li>
+										<li class="dropdown-item dropdown-item_flex">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/solutions/role/world.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> ГИС-профессионал </span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<span class="nav-item__text">Документация</span>
+							<div class="navbar__dropdown">
+								<div class="dropdown__section dropdown__section_pr-small">
+									<ul class="dropdown-list">
+										<li class="dropdown-item">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/document/document.svg" alt="menu__item">
+												</div>
+												<div class="dropdown-item__text-wrapper">
+													<span class="dropdown-item__text"> Документация </span>
+													<p class="dropdown-item__description">Документация и ресурсы для максимально
+														эффективного использования Epsilon</p>
+												</div>
+											</a>
+										</li>
+										<li class="dropdown-item">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/document/metod.svg" alt="menu__item">
+												</div>
+												<div class="dropdown-item__text-wrapper">
+													<span class="dropdown-item__text"> Методические рекомендации </span>
+													<p class="dropdown-item__description">Пошаговые инструкции, чтобы быстро стать
+														экспертом</p>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="dropdown-item__link link_underline link_underline_main" href="">
+								<span class="dropdown-item__text"> Цены </span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<span class="nav-item__text">О компании</span>
+							<div class="navbar__dropdown">
+								<div class="dropdown__section">
+									<ul class="dropdown-list">
+										<li class="dropdown-item">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/company/blog.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Блог </span>
+											</a>
+										</li>
+										<li class="dropdown-item">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/company/stories.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Истории клиентов </span>
+											</a>
+										</li>
+										<li class="dropdown-item">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/company/career.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Карьера </span>
+											</a>
+										</li>
+										<li class="dropdown-item">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/company/us.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> О нас </span>
+											</a>
+										</li>
+										<li class="dropdown-item">
+											<a class="dropdown-item__link link_underline" href="">
+												<div class="dropdown-item__ico">
+													<img src="./img/icon/menu/company/partners.svg" alt="menu__item">
+												</div>
+												<span class="dropdown-item__text"> Партнерам </span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="header-nav__btn btn" href="">
+								<span>Войти</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- BURGER -->
+				<div class="burger">
+					<span class="burger__line"></span>
+				</div>
+			</div>
+			<!-- TOP -->
+			<div class="header__banner header__banner-docs">
+				<div class="header-docs__body">
+					<h1 class="header__title">Документация</h1>
+					<p class="header__subtitle">Добро пожаловать в Центр документации EpsilonMetrics! Все ресурсы,
+						<br> которые вам нужны, чтобы раскрыть всю мощь нашей геоаналитической
+						<br> платформы.</p>
+					</div>
+				<div class="header-docs__img">
+					<img src="img/icon/docs/FLAT.png" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="docs-content">
+		<div class="docs-content__container container">
+			<h2 class="docs-content__title general-title">
+				Геоаналитическая
+				платформа Epsilon Metrics
+			</h2>
+			<div class="docs-content__text general-text">
+				<p>EpsilonMetrics раскрывает возможности пространственного анализа в облаке, расширяя
+				возможности визуализации, анализа и разработки ведущих платформ облачных хранилищ
+				данных, таких как Яндекс.Облако, Облако Mail.ru, Sbercloudи другие.</p>
+				<p>Узнайте, как получить максимальную отдачу от нашей геоаналитической платформы
+				из нашей документации по продукту:</p>
+			</div>
+			<div class="docs-content__items">
+				<div class="docs-content__item">
+					<div class="docs-content__card">
+						<div class="docs-content__card-icon">
+							<img src="img/icon/docs/1.svg" alt="">
+						</div>
+						<h6 class="docs-content__card-title">
+							Руководство пользователя Epsilon Metrics
+						</h6>
+						<p class="docs-content__card-text general-text">
+							Управляйте своими наборами данных и картами, получайте д
+							оступ к настройкам своей учетной записи, управляйте ключами
+							API и получайте доступ к общедоступному профилю.
+						</p>
+					</div>
+				</div>
+				<div class="docs-content__item">
+					<div class="docs-content__card">
+						<div class="docs-content__card-icon">
+							<img src="img/icon/docs/2.svg" alt="">
+						</div>
+						<h6 class="docs-content__card-title">
+							Вопросы-Ответы
+						</h6>
+						<p class="docs-content__card-text general-text">
+							Часто задаваемые вопросы о платформе CARTO
+							и ее компонентах.
+						</p>
+					</div>
+				</div>
+				<div class="docs-content__item">
+					<div class="docs-content__card">
+						<div class="docs-content__card-icon">
+							<img src="img/icon/docs/3.svg" alt="">
+						</div>
+						<h6 class="docs-content__card-title">
+							Что нового
+						</h6>
+						<p class="docs-content__card-text general-text">
+							Узнайте о последних возможностях, улучшениях
+							и исправлениях ошибок в нашем продукте.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-------------- FOOTER -------------->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__content">
+				<div class="footer__logo">
+					<img class="f-logo__main" src="./img/footer/logo_footer.png" alt="logo">
+					<p class="f-logo__text">Участник</p>
+					<img class="f-logo__cluster" src="./img/footer/moscow_cluster.png" alt="moscow_cluster">
+				</div>
+				<div class="footer__menu">
+					<div class="f-menu__item">
+						<h4 class="f-item__title">Платформа</h4>
+						<ul class="f-item__list">
+							<li class="f-item">
+								<a href="">Технология</a>
+							</li>
+							<li class="f-item">
+								<a href="">Данные</a>
+							</li>
+							<li class="f-item">
+								<a href="">Сервисы</a>
+							</li>
+						</ul>
+					</div>
+					<div class="f-menu__item">
+						<h4 class="f-item__title">О компании</h4>
+						<ul class="f-item__list">
+							<li class="f-item">
+								<a href="">Блог</a>
+							</li>
+							<li class="f-item">
+								<a href="">Истории клиентов</a>
+							</li>
+							<li class="f-item">
+								<a href="">Карьера</a>
+							</li>
+							<li class="f-item">
+								<a href="">О нпс</a>
+							</li>
+							<li class="f-item">
+								<a href="">Партнерам</a>
+							</li>
+							<li class="f-item">
+								<a href="">Пользовательское соглашение</a>
+							</li>
+							<li class="f-item">
+								<a href="">Политика конфиденциальности</a>
+							</li>
+						</ul>
+					</div>
+					<div class="f-menu__item">
+						<h4 class="f-item__title">Документация</h4>
+						<ul class="f-item__list">
+							<li class="f-item">
+								<a href="">Документация</a>
+							</li>
+							<li class="f-item">
+								<a href="">Методические рекомендации</a>
+							</li>
+						</ul>
+					</div>
+					<div class="f-menu__item">
+						<h4 class="f-item__title">Решения</h4>
+						<h5 class="f-item__subtitle">По отрасли</h5>
+						<ul class="f-item__list">
+							<li class="f-item">
+								<a href="">Города и правительство</a>
+							</li>
+							<li class="f-item">
+								<a href="">Маркетинг и реклама</a>
+							</li>
+							<li class="f-item">
+								<a href="">Финансовые услуги</a>
+							</li>
+							<li class="f-item">
+								<a href="">Недвижимость</a>
+							</li>
+							<li class="f-item">
+								<a href="">Потребительские товары</a>
+							</li>
+							<li class="f-item">
+								<a href="">Розничная торговля</a>
+							</li>
+							<li class="f-item">
+								<a href="">Окружающая среда</a>
+							</li>
+							<li class="f-item">
+								<a href="">Телекоммуникации</a>
+							</li>
+							<li class="f-item">
+								<a href="">Здоровье и фармацевтика</a>
+							</li>
+							<li class="f-item">
+								<a href="">Транспорт</a>
+							</li>
+							<li class="f-item">
+								<a href="">Логистика</a>
+							</li>
+							<li class="f-item">
+								<a href="">Коммунальные услуги</a>
+							</li>
+						</ul>
+					</div>
+					<div class="f-menu__item">
+						<h4 class="f-item__title">&nbsp;</h4>
+						<h5 class="f-item__subtitle">По сценарию<br>использования</h5>
+						<ul class="f-item__list">
+							<li class="f-item">
+								<a href="">Города и правительство</a>
+							</li>
+							<li class="f-item">
+								<a href="">Маркетинг и реклама</a>
+							</li>
+							<li class="f-item">
+								<a href="">Финансовые услуги</a>
+							</li>
+							<li class="f-item">
+								<a href="">Потребительские товары</a>
+							</li>
+							<li class="f-item">
+								<a href="">Розничная торговля</a>
+							</li>
+							<li class="f-item">
+								<a href="">Окружающая среда</a>
+							</li>
+							<li class="f-item">
+								<a href="">Телекоммуникации</a>
+							</li>
+							<li class="f-item">
+								<a href="">Здоровье и фармацевтика</a>
+							</li>
+							<li class="f-item">
+								<a href="">Транспорт</a>
+							</li>
+							<li class="f-item">
+								<a href="">Логистика</a>
+							</li>
+							<li class="f-item">
+								<a href="">Коммунальные услуги</a>
+							</li>
+							<li class="f-item">
+								<a href="">Планировка территории</a>
+							</li>
+							<li class="f-item">
+								<a href="">Анализ рынка недвижимости</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="f-bottom__content">
+					<span class="f-bottom__copyright">@ Epsilon Metrics 2022</span>
+					<span class="f-bottom__slogan">Превращаем геоданные в умные идеи!</span>
+					<a class="social__link" href="">
+						<img class="social__vk" src="./img/icon/social/vk.svg" alt="VK">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

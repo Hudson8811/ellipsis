@@ -1,0 +1,25 @@
+:root {
+  /* color */
+  --color: #343EA8;
+  --color-btn: #FFC235;
+  
+  /* font */
+  --fs-title-xxl: 40px;
+  --fw-p-sm: 400;
+
+  
+  --fs-title-sm: 24px;
+  --lh-title-sm: 32px;
+  --fw-title-sm: 600;
+  --ls-title-sm: 0;
+  
+  --fs-subtitle-sm: 20px;
+  --lh-subtitle-sm: 28px;
+  --fw-subtitle-sm: 600;
+  --ls-subtitle-sm: 0;
+  
+  --fs-text-sm: 16px;
+  --lh-text-sm: 26px;
+  --fw-text-sm: 400;
+  --ls-text-sm: -0.01em;
+}
