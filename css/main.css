@@ -70,6 +70,7 @@
 
 .header-nav__logo {
   margin-right: 128px;
+  z-index: 5;
 }
 @media (max-width: 1200px) {
   .header-nav__logo {
@@ -103,7 +104,21 @@
   cursor: default;
 }
 
-.nav-item:hover .navbar__dropdown {
+.nav-item::before {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 43px;
+  left: calc(30%);
+  width: 28px;
+  height: 28px;
+  border-radius: 2px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
+.nav-item:hover .navbar__dropdown, 
+.nav-item:hover::before {
   display: block;
 }
 
@@ -111,6 +126,10 @@
   display: flex;
   flex-direction: column;
   
+}
+
+.nav-item_empty:hover::before {
+  display: none;
 }
 
 .navbar__dropdown {
@@ -130,18 +149,6 @@
   background-color: #fff;
   border-radius: 12px;
   z-index: 5;
-}
-
-.navbar__dropdown::before {
-  content: "";
-  position: absolute;
-  top: -7px;
-  left: 50px;
-  border-radius: 2px;
-  width: 28px;
-  height: 28px;
-  background-color: #fff;
-  transform: rotate(45deg);
 }
 
 .dropdown__section {
@@ -168,6 +175,8 @@
 
 .dropdown-item_flex {
   width: 50%;
+  /* width: min-content; */
+  /* min-width: 50%; */
 }
 
 .dropdown-item {
@@ -180,6 +189,8 @@
 .dropdown-item__link {
   display: flex;
   align-items: flex-start;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .link_underline span {
@@ -345,7 +356,7 @@
 }
 
 .header__title {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 49px;
@@ -508,7 +519,7 @@
 }
 
 .slide__subtitle {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: -0.01em;
@@ -525,7 +536,7 @@
 }
 
 .slide__title {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
@@ -836,7 +847,7 @@
 }
 
 .info__subtitle {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   line-height: 20px;
   font-weight: 500;
   letter-spacing: -0.01em;
@@ -859,7 +870,7 @@
 }
 
 .info__title {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 49px;
@@ -982,7 +993,7 @@
 }
 
 .analysis__title {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 49px;
@@ -1162,7 +1173,7 @@
 }
 
 .swip-access__title {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 49px;
@@ -1316,7 +1327,7 @@
 }
 
 .community__title {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 49px;
@@ -1456,7 +1467,7 @@
 }
 
 .feedback__subtitle {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: -0.01em;
@@ -1473,7 +1484,7 @@
 }
 
 .feedback__title {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 49px;
@@ -1544,7 +1555,7 @@
 
 .input-group__input,
 .input-group__label {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -1617,7 +1628,7 @@
 
 .input-group__label_text,
 .form-feedback__text {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   line-height: 17px;
   color: #FFFFFF;

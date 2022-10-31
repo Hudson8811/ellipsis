@@ -81,7 +81,7 @@ const swiper = new Swiper('.swiper1', {
 });
 
 
-// ************************* 22222222222222222222
+// ************************* 2
 
 const swiper2 = new Swiper('.swiper-2', {
   // активный слайд будет центрирован
@@ -113,6 +113,63 @@ const swiper2 = new Swiper('.swiper-2', {
 function addZero(num){
   return (num > 9) ? num : '0' + num;
 }
+
+
+// ************************* 3 Mobile Menu
+
+const swiper3 = new Swiper('.swiper-3', {
+  // активный слайд будет центрирован
+  centeredSlides: true,
+  // Расстояние между слайдами в px
+  spaceBetween: 10,
+  // слайды, видимые одновременно в контейнере слайдера
+  slidesPerView: 1,
+  freeMode: true,
+  width: 730,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    // type: 'custom',
+    renderBullet: function(index, className) {
+      const tabsName = [
+        ['По Отрасли'],
+        ['По Сценарию использования'],
+        ['По Роли'],
+      ]
+      
+      let text = `<li class="tab__item ${className}"><a class="tab__link"><span>${tabsName[index]}</span></a></li>`
+
+      return text
+    },
+  },
+});
+
+swiper3.on('activeIndexChange', () => {
+  // id кнопки для текущего слайда
+  let id = '#btn_tab_mobile-'
+  id += swiper3.realIndex + 1
+
+  // находим все кнопки и отключаем их
+  const btnsTab = document.querySelectorAll('.btn_tab')
+
+  if (btnsTab.length > 0) {
+    btnsTab.forEach (btn => {
+      if (btn.classList.contains('active')) {
+        btn.classList.remove('active')
+      }
+    })
+  }
+
+  // активируем нужную нам кнопку
+  const btnTabTarget = document.querySelector(id)
+  if (btnTabTarget) {
+    btnTabTarget.classList.add('active')
+  }
+  console.log(btnTabTarget);
+})
+
+// reviews__swiper
 
 const swiper1 = new Swiper(".reviews__swiper", {
   navigation: {
