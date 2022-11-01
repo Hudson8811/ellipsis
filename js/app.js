@@ -91,11 +91,6 @@ const swiper2 = new Swiper('.swiper-2', {
   // слайды, видимые одновременно в контейнере слайдера
   slidesPerView: 1.01,
 
-  // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
-
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
@@ -169,7 +164,8 @@ swiper3.on('activeIndexChange', () => {
   console.log(btnTabTarget);
 })
 
-// reviews__swiper
+
+//************************************* */ reviews__swiper
 
 const swiper1 = new Swiper(".reviews__swiper", {
   navigation: {
@@ -181,6 +177,79 @@ const swiper1 = new Swiper(".reviews__swiper", {
   breakpoints: {
     992: {
       slidesPerView: 2,
+      spaceBetween: 30
+    },
+  },
+});
+
+
+//********************************* */ Catalog sources
+
+const swiperCatalogSources = new Swiper(".swiper__sources", {
+  navigation: {
+    nextEl: ".swiper-sources-button-next",
+    prevEl: ".swiper-sources-button-prev",
+  },
+  slidesPerView: 4.75,
+  spaceBetween: 30,
+  // активный слайд будет центрирован
+  centeredSlides: true,
+  // адаптив
+  breakpoints: {
+    // >= 320
+    320: {
+      slidesPerView: 1.2,
+      spaceBetween: 10
+    },
+    // >= 375
+    375: {
+      slidesPerView: 1.4,
+      spaceBetween: 15
+    },
+    // >= 425
+    425: {
+      slidesPerView: 1.55,
+      spaceBetween: 20
+    },
+    // >= 480
+    480: {
+      slidesPerView: 1.7,
+      spaceBetween: 20
+    },
+    // >= 640
+    640: {
+      slidesPerView: 2.3,
+      spaceBetween: 25
+    },
+    // >= 720
+    720: {
+      slidesPerView: 2.6,
+      spaceBetween: 25
+    },
+    // >= 820
+    820: {
+      slidesPerView: 2.9,
+      spaceBetween: 25
+    },
+    // >= 960
+    960: {
+      slidesPerView: 3.4,
+      spaceBetween: 30
+    },
+    // >= 1140
+    1140: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    },
+    // >= 1200
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    },
+    // >= 1340
+    1340: {
+      centeredSlides: false,
+      slidesPerView: 4.766,
       spaceBetween: 30
     },
   },
