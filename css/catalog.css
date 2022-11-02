@@ -147,7 +147,6 @@
   }
 }
 
-
 .categories__item:hover {
   box-shadow: 0 6px 10px 0 rgba(22,41,69,.24);
 }
@@ -304,13 +303,14 @@
   letter-spacing: -0.01em;
 }
 
+
 /* COMMUNITY */
 
 .community {
   padding: 56px 0 64px;
 }
 
-.community__btn_contact {
+/* .community__btn_contact {
   color: #FFD335;
 }
 
@@ -326,7 +326,7 @@
 .community__btn_contact > span:after {
   content: url(../img/icon/arrow_btn_yellow.svg);
   margin-left: 12px;
-}
+} */
 
 
 /* FOOTER */

@@ -560,6 +560,7 @@
 
 .slide__map {
   width: 108%;
+  max-width: 108%;
   border-radius: 16px;
   margin-top: 15px;
 }
@@ -1439,7 +1440,22 @@
 }
 
 .community__btn {
+  color: #FFD335;
   margin-top: auto;
+}
+
+.community__btn > span {
+  letter-spacing: -0.01em;
+}
+
+.community__btn > span::before {
+  height: 1px;
+  background-color: #FFD335;
+}
+
+.community__btn > span:after {
+  content: url(../img/icon/arrow_btn_yellow.svg);
+  margin-left: 12px;
 }
 
 
@@ -1447,7 +1463,7 @@
 
 .feedback {
   width: 100%;
-  padding: 65px 0 70px;
+  padding: 65px 0 72px;
   background-color: var(--color);
 }
 @media (max-width: 576px) {
@@ -1708,6 +1724,7 @@
   margin-left: 3px;
 }
 
+
 /**************************** FOOTER */
 
 .footer {
@@ -1725,8 +1742,8 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 791px;
-  padding: 50px 0 24px;
+  height: 914px;
+  padding: 67px 0 24px;
 }
 @media (max-width: 1200px) {
   .footer__content {
@@ -1757,9 +1774,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 21.7%;
+  max-width: 17.65%;
   height: 100%;
-  margin-right: 57px;
+  margin-right: 52px;
 }
 @media (max-width: 992px) {
   .footer__logo {
@@ -1775,7 +1792,7 @@
 .f-logo__main {
   width: 100%;
   margin-top: 4px;
-  margin-left: -4px;
+  margin-left: -6px;
   margin-bottom: auto;
 }
 @media (max-width: 768px) {
@@ -1793,10 +1810,12 @@
   margin-bottom: 14px;
 }
 
+
 .f-logo__cluster {
   width: 103%;
-  margin-left: -14px;
-  margin-bottom: 22px;
+  max-width: 103%;
+  margin-left: -13px;
+  margin-bottom: 141px;
 }
 @media (max-width: 768px) {
   .f-logo__cluster {
@@ -1813,6 +1832,7 @@
   flex-grow: 1;
   height: 100%;
   margin-top: 1px;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .footer__menu {
@@ -1821,8 +1841,9 @@
 }
 
 .f-menu__item {
-  width: 33.7%;
+  width: 27.1%;
   margin: 17px 0 20px;
+  padding: 0 14px 0 0;
 }
 @media (max-width: 992px) {
   .f-menu__item {
@@ -1876,7 +1897,8 @@
 }
 
 .f-item {
-  line-height: 40px;
+  line-height: 26px;
+  margin-top: 19px;
 }
 @media (max-width: 576px) {
   .f-item {
@@ -1930,7 +1952,7 @@
   line-height: 24px;
   letter-spacing: -0.01em;
   color: #222222;
-  margin-left: 12%;
+  margin-left: 13%;
 }
 @media (max-width: 768px) {
   .f-bottom__slogan {
