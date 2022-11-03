@@ -1,3 +1,5 @@
+// SWIPER sliders
+
 const swiper = new Swiper('.swiper1', {
   // активный слайд будет центрирован
   centeredSlides: true,
@@ -254,3 +256,22 @@ const swiperCatalogSources = new Swiper(".swiper__sources", {
     },
   },
 });
+
+
+// SERVICES open/close map
+
+function ToggleMap() {
+  // btn
+  const btnMapToggle = document.querySelector('#btnMapToggle')
+  // text on btn
+  const btnTextOpen = document.querySelector('#btnTextOpen')
+  const btnTextClose = document.querySelector('#btnTextClose')
+  // block toggle
+  const mapInfo = document.querySelector('#mapInfo')
+
+  // toggle classes
+  btnMapToggle.classList.toggle('active')
+  btnTextOpen.classList.toggle('active')
+  btnTextClose.classList.toggle('active')
+  mapInfo.classList.toggle('hidden')
+}

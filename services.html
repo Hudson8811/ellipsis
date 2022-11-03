@@ -893,10 +893,13 @@
 <section class="map">
     <div class="container">
         <div class="map__wrapper">
-            <div class="map__img"><img src="./img/services/map.png" alt=""></div>
-            <div class="map__info">
+            <!-- <div class="map__img"><img src="./img/services/map.png" alt=""></div> -->
+            <div class="map__frame">
+                <iframe width="100%" height="552" frameborder="0" src="https://maps.epsilonmetrics.ru/user/epsilon/builder/6bccbdb3-fd5a-41a1-80f3-f3b067d7c404/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+                </div>
+            <div class="map__info" id="mapInfo">
                 <p class="map__title">Истории успеха</p>
-                <div class="map__logo"><img src="./img/slider/1/slide_logo.png" alt=""></div>
+                <div class="map__logo"><img src="./img/services/map_logo.jpg" alt=""></div>
                 <div class="map-info__wrapper">
                     <div class="map-info__client">
                         <p class="map-info__title">Проблема клиента</p>
@@ -909,9 +912,10 @@
                 </div>
             </div>
         </div>
-        <a class="map__btn btn btn_yellow" href="">
-            <span class="map__btn_open active">Раскрыть</span>
-            <span class="map__btn_close">Закрыть</span>
+        <a class="map__btn btn btn_yellow" onclick="ToggleMap()" id="btnMapToggle">
+            <div class="map__btn_ico">+</div>
+            <span class="map__btn_open active" id="btnTextOpen">Раскрыть</span>
+            <span class="map__btn_close" id="btnTextClose">Закрыть</span>
         </a>
     </div>
 </section>
@@ -1001,7 +1005,7 @@
 
 <footer class="footer">
     <div class="container">
-        <div class="footer__content">
+        <div class="footer__content footer__content_services">
             <div class="footer__logo">
                 <img class="f-logo__main" src="./img/footer/logo_footer.png" alt="logo">
                 <p class="f-logo__text">Участник</p>
