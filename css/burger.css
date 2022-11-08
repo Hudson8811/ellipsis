@@ -92,7 +92,7 @@
   }
 
 
-  /* MOBILE MENU */
+  /****************** MOBILE MENU */
 
   .mobile__wrapper {
     display: block;
@@ -219,6 +219,10 @@
     padding: 24px 0;
     background-color: var(--color);
     z-index: 5;
+  }
+
+  .list-account__item {
+    /* margin-right: 32px; */
   }
 
   /* TABS */

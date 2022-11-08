@@ -1,7 +1,8 @@
 :root {
   /* color */
   --color: #343EA8;
-  --color-btn: #FFC235;
+  /* --color-btn: #FFC235; */
+  --color-btn: #FF7F49;
   
   /* font */
   --fs-title-xxl: 40px;

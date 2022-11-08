@@ -41,7 +41,7 @@
 }
 
 .btn_yellow > span::after {
-  content: url(../img/icon/arrow_btn.svg);
+  content: url(../img/icons/arrow_btn.svg);
   margin-left: 7px;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .btn_inline > span::after {
-  content: url(../img/icon/arrow_btn_blue.svg);
+  content: url(../img/icons/arrow_btn_blue.svg);
   margin-left: 12px;
 }
 
