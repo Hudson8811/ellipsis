@@ -125,7 +125,6 @@
 .nav-item:hover .navbar__dropdown_flex {
   display: flex;
   flex-direction: column;
-  
 }
 
 .nav-item_empty:hover::before {
@@ -315,25 +314,29 @@
   width: 130px;
   height: 50px;
   line-height: 27px;
-  margin-left: 86px;
+  /* margin-left: 86px; */
+  margin-left: auto;
   padding-left: 38px;
   padding-right: 38px;
 }
 @media (max-width: 992px) {
   .header-nav__btn {
-    margin-left: 0;
+    /* margin-left: 0; */
   }
 }
 
 .header-nav__btn_orange {
-  width: auto;
-  margin-left: 32px;
+  /* margin-left: 32px; */
   background-color: var(--color-btn);
 }
 
 .header-nav__btn_small {
+  width: auto;
   height: 40px;
-  line-height: 18px;
+  padding: 10px 16px;
+  font-size: 12px;
+  line-height: 21px;
+  white-space: nowrap;
 }
 
 .header__banner {

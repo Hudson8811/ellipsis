@@ -220,9 +220,28 @@
     background-color: var(--color);
     z-index: 5;
   }
+  @media (max-width: 576px) {
+    .mobile__list-account {
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 12px 0;
+    }
+  }
 
-  .list-account__item {
-    /* margin-right: 32px; */
+  /* .list-account__item {
+    margin-right: 32px;
+  } */
+  
+  .header-nav__btn_mobile {
+    width: auto !important;
+    margin-left: 32px !important;
+    white-space: nowrap;
+  }
+  @media (max-width: 576px) {
+    .header-nav__btn_mobile {
+      margin-top: 12px;
+      margin-left: 0px !important;
+    }
   }
 
   /* TABS */
