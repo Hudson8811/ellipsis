@@ -66,6 +66,7 @@
   align-items: center;
   width: 100%;
   height: 15%;
+  z-index: 5;
 }
 
 .header-nav__logo {
@@ -147,7 +148,8 @@
   color: #222222;
   background-color: #fff;
   border-radius: 12px;
-  z-index: 5;
+  z-index: 5000;
+  box-shadow: 1px 5px 20px 2px rgba(22,41,69,.2);
 }
 
 .dropdown__section {
@@ -319,11 +321,11 @@
   padding-left: 38px;
   padding-right: 38px;
 }
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .header-nav__btn {
-    /* margin-left: 0; */
+    margin-left: 0;
   }
-}
+} */
 
 .header-nav__btn_orange {
   /* margin-left: 32px; */

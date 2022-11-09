@@ -1,3 +1,7 @@
+body.bg-full {
+  background-color: var(--color);
+}
+
 .general-title {
 		font-family: 'Montserrat';
 		font-weight: 700;
@@ -472,6 +476,7 @@
 		}
 	}
 	&__card {
+		display: block;
 		background: #F2F6F9;
 		border: 1px solid #DEE7EE;
 		border-radius: 10px;
@@ -505,6 +510,7 @@
 .header-user {
 	background-color: #343EA8;
 	padding-bottom: 40px!important;
+	overflow: visible !important;
 	.header__banner-user {
 		margin-top: 35px;
 		padding-top: 35px;

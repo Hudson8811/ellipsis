@@ -145,7 +145,7 @@
 }
 
 .map__info::before {
-  content: url('../img/icon/services/index2.png');
+  content: url('../img/icons/services/index2.png');
   position: absolute;
   top: 0px;
   left: -101px;
@@ -239,8 +239,8 @@
 
 .map__btn {
   position: absolute;
-  bottom: 0px;
-  padding: 13px 57px;
+  bottom: 21px;
+  padding: 6px 30px;
 }
 @media(max-width: 992px) {
   .map__btn {
@@ -250,8 +250,8 @@
 
 .map__btn_ico {
   position: absolute;
-  top: 13px;
-  left: 20%;
+  top: 6px;
+  left: 11%;
   margin: 0;
   padding: 0;
   transition: transform 0.1s ease 0s;
@@ -259,6 +259,10 @@
 
 .map__btn.active .map__btn_ico {
   transform: rotate(45deg);
+}
+
+.map__btn > span::before {
+  background-color: transparent;
 }
 
 .map__btn > span::after {
