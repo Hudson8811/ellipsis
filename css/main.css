@@ -8,7 +8,10 @@
 
 
 /**************************** HEADER */
-
+.bg-full__indevelopment{
+	background: url(../img/indevelopment__bg.png) center/cover no-repeat;
+}
+.bg-full__indevelopment .header.header-indevelopment:before{display:none}
 .header {
   display: flex;
   flex-direction: column;
