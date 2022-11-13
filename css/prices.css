@@ -1,0 +1,179 @@
+/* prices */
+
+
+.header {
+  height: 749px;
+  overflow: visible;
+}
+
+.header::before {
+  background-color: var(--color);
+  background-image: url(../img/prices/top.png);
+}
+
+.header__banner {
+  align-items: center;
+  margin-top: 0px;
+}
+
+.prices-header__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.header__title {
+  width: auto;
+  text-align: center;
+}
+
+.header__subtitle {
+  margin-top: 12px;
+}
+
+.prices-header__cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 830px;
+  height: 619px;
+  border-radius: 15px;
+}
+
+.pheader__card_individual,
+.pheader__card_enterprise {
+  position: relative;
+  flex: 0 1 50%;
+  height: 100%;
+}
+
+.pheader__card_individual {
+  background-color: #F2F6F9;
+}
+
+.pheader__card_enterprise {
+  background-color: #1A2172;
+}
+
+.individual__logo,
+.enterprise__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 82px;
+  background-color: #F2F6F9;
+}
+
+.individual__logo > img,
+.enterprise__logo > img {
+  width: 60%;
+}
+
+.enterprise__logo {
+  background-color: #1A2172;
+}
+
+.pcard__title {
+  margin: 0 auto;
+  /* font */
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #222222;
+}
+
+.pcard__subtitle {
+  margin: 0 auto;
+  /* font */
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #4D4D4D;
+}
+
+.pheader__card_individual .pcard__item {
+  background-image: url(../img/icons/prices/check-circle-blue.svg);
+  background-repeat: no-repeat;
+}
+
+.pheader__card_enterprise .pcard__item {
+  background-image: url(../img/icons/prices/check-circle-white.svg);
+  background-repeat: no-repeat;
+}
+
+.pcard__price {
+  text-align: center;
+}
+
+.pcard__price_old {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #ADADAD;
+  text-decoration: line-through;
+}
+
+.pcard__price_new {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #222222;
+}
+
+.pcard__price_discount {
+  width: 61px;
+  height: 24px;
+  background-color: #EB5757;
+  border-radius: 3px;
+  /* font */
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+
+.pcard__btn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 96px;
+  border-top: 1px solid #D7D7D7;
+}
+
+.pheader__card_enterprise .pcard__btn {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn_pcard {
+  width: 208px;
+}
