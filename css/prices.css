@@ -9,6 +9,8 @@
 .header::before {
   background-color: var(--color);
   background-image: url(../img/prices/top.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header__banner {
@@ -33,13 +35,15 @@
   margin-top: 12px;
 }
 
+/************************ CARDS */
+
 .prices-header__cards {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   width: 830px;
   height: 619px;
-  border-radius: 15px;
+  margin-top: 85px;
 }
 
 .pheader__card_individual,
@@ -47,14 +51,18 @@
   position: relative;
   flex: 0 1 50%;
   height: 100%;
+  padding: 46px 36px 0;
 }
 
 .pheader__card_individual {
   background-color: #F2F6F9;
+  border-radius: 15px 0 0 15px;
 }
 
 .pheader__card_enterprise {
+  color: #FFFFFF;
   background-color: #1A2172;
+  border-radius: 0 15px 15px 0;
 }
 
 .individual__logo,
@@ -68,11 +76,13 @@
   width: 82px;
   height: 82px;
   background-color: #F2F6F9;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .individual__logo > img,
 .enterprise__logo > img {
-  width: 60%;
+  width: 50%;
 }
 
 .enterprise__logo {
@@ -93,7 +103,7 @@
 }
 
 .pcard__subtitle {
-  margin: 0 auto;
+  margin: 0 auto 28px;
   /* font */
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -105,18 +115,31 @@
   color: #4D4D4D;
 }
 
+.pheader__card_enterprise .pcard__title,
+.pheader__card_enterprise .pcard__subtitle {
+  color: #FFFFFF;
+}
+
+.pcard__item {
+  margin-bottom: 9px;
+  padding-left: 21px;
+}
+
 .pheader__card_individual .pcard__item {
   background-image: url(../img/icons/prices/check-circle-blue.svg);
   background-repeat: no-repeat;
+  background-position: left 4px;
 }
 
 .pheader__card_enterprise .pcard__item {
   background-image: url(../img/icons/prices/check-circle-white.svg);
   background-repeat: no-repeat;
+  background-position: left 4px;
 }
 
 .pcard__price {
   text-align: center;
+  margin-top: 24px;
 }
 
 .pcard__price_old {
@@ -143,10 +166,14 @@
 }
 
 .pcard__price_discount {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 61px;
   height: 24px;
   background-color: #EB5757;
   border-radius: 3px;
+  transform: skewX(-10deg);
   /* font */
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -176,4 +203,117 @@
 
 .btn_pcard {
   width: 208px;
+}
+
+
+/****************** TABLE */
+
+.price-table {
+  margin-top: 250px;
+  padding-bottom: 65px;
+}
+
+.ptable__title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #222222;
+}
+
+.ptable__table {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.ptable__table td {
+  padding: 10px 15px 10px 0;
+  border-bottom: 1px solid #D7D7D7;
+  /* font */
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: #222222;
+}
+
+.row__title td {
+  padding-top: 30px;
+  border-bottom: 1px solid #595959;
+  /* font */
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: #222222;
+}
+
+.ptable__caption {
+  margin-top: 30px;
+  /* font */
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: #222222;  
+}
+
+
+/**************************** CONTACT US */
+
+.contact {
+  padding: 100px 0 90px;
+  background-color: var(--color);
+}
+
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact__text {
+  width: 68%;
+  margin: 50px 0 13px;
+  /* font */
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.contact__title {
+  margin-bottom: 55px;
+  /* font */
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+
+.contact__btn {
+  width: 208px;
+}
+
+.contact__btn > span {
+  letter-spacing: -0.01em;
 }
