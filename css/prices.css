@@ -3,6 +3,7 @@
 
 .header {
   height: 749px;
+  padding-top: 20px;
   overflow: visible;
 }
 
@@ -23,7 +24,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 37px;
 }
 
 .header__title {
@@ -33,7 +34,17 @@
 
 .header__subtitle {
   margin-top: 12px;
+  /* font */
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
 }
+
 
 /************************ CARDS */
 
@@ -43,7 +54,7 @@
   align-items: flex-start;
   width: 830px;
   height: 619px;
-  margin-top: 85px;
+  margin-top: 84px;
 }
 
 .pheader__card_individual,
@@ -51,10 +62,11 @@
   position: relative;
   flex: 0 1 50%;
   height: 100%;
-  padding: 46px 36px 0;
+  padding: 46px 30px 0 30px;
 }
 
 .pheader__card_individual {
+  color: #222222;
   background-color: #F2F6F9;
   border-radius: 15px 0 0 15px;
 }
@@ -68,11 +80,11 @@
 .individual__logo,
 .enterprise__logo {
   position: absolute;
-  top: 0;
-  left: 50%;
+  top: -4px;
+  left: 207px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  align-items: flex-start;
   width: 82px;
   height: 82px;
   background-color: #F2F6F9;
@@ -80,13 +92,18 @@
   transform: translate(-50%, -50%);
 }
 
+.enterprise__logo {
+  left: auto;
+  right: 50%;
+  background-color: #1A2172;
+  transform: translate(50%, -50%);
+}
+
 .individual__logo > img,
 .enterprise__logo > img {
   width: 50%;
-}
-
-.enterprise__logo {
-  background-color: #1A2172;
+  margin: 0 auto;
+  margin-top: 18px;
 }
 
 .pcard__title {
@@ -103,7 +120,7 @@
 }
 
 .pcard__subtitle {
-  margin: 0 auto 28px;
+  margin: 0 auto 25px;
   /* font */
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -120,21 +137,30 @@
   color: #FFFFFF;
 }
 
+.pcard__list {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+}
+
 .pcard__item {
   margin-bottom: 9px;
-  padding-left: 21px;
+  padding-left: 23px;
 }
 
 .pheader__card_individual .pcard__item {
   background-image: url(../img/icons/prices/check-circle-blue.svg);
   background-repeat: no-repeat;
-  background-position: left 4px;
+  background-position: left 7px;
 }
 
 .pheader__card_enterprise .pcard__item {
   background-image: url(../img/icons/prices/check-circle-white.svg);
   background-repeat: no-repeat;
-  background-position: left 4px;
+  background-position: left 7px;
 }
 
 .pcard__price {
@@ -209,7 +235,7 @@
 /****************** TABLE */
 
 .price-table {
-  margin-top: 250px;
+  margin-top: 241px;
   padding-bottom: 65px;
 }
 
@@ -226,11 +252,11 @@
 
 .ptable__table {
   width: 100%;
-  margin-top: 30px;
+  margin-top: -2px;
 }
 
 .ptable__table td {
-  padding: 10px 15px 10px 0;
+  padding: 10px 15px 11px 0;
   border-bottom: 1px solid #D7D7D7;
   /* font */
   font-family: 'Open Sans', sans-serif;
@@ -253,6 +279,14 @@
   line-height: 26px;
   letter-spacing: -0.01em;
   color: #222222;
+}
+
+td:first-child {
+  width: 57.4%;
+}
+
+td:nth-child(2) {
+  width: 17%;
 }
 
 .ptable__caption {

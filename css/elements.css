@@ -76,3 +76,15 @@
   opacity: 0.3 !important;
   cursor: default !important;
 }
+
+.lh-20 {
+  line-height: 20px !important;
+}
+
+.pt-3 {
+  padding-top: 3px !important;
+}
+
+.pb-7 {
+  padding-bottom: 7px !important;
+}
