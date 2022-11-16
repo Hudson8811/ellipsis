@@ -165,7 +165,7 @@
 
 .pcard__price {
   text-align: center;
-  margin-top: 24px;
+  margin-top: 28px;
 }
 
 .pcard__price_old {
@@ -173,7 +173,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 26px;
   text-align: center;
   letter-spacing: -0.01em;
   color: #ADADAD;
@@ -181,22 +181,29 @@
 }
 
 .pcard__price_new {
+  margin-left: -3px;
+  /* font */
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 28px;
   text-align: center;
   letter-spacing: -0.01em;
   color: #222222;
+}
+
+.pcard__price_new > span {
+  font-size: 20px;
 }
 
 .pcard__price_discount {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 61px;
+  width: 57px;
   height: 24px;
+  margin-left: 5px;
   background-color: #EB5757;
   border-radius: 3px;
   transform: skewX(-10deg);
@@ -209,6 +216,10 @@
   text-align: center;
   letter-spacing: -0.01em;
   color: #FFFFFF;
+}
+
+.pcard__price_discount > span {
+  transform: skewX(10deg);
 }
 
 .pcard__btn {
@@ -236,7 +247,7 @@
 
 .price-table {
   margin-top: 241px;
-  padding-bottom: 65px;
+  padding-bottom: 61px;
 }
 
 .ptable__title {
@@ -256,7 +267,7 @@
 }
 
 .ptable__table td {
-  padding: 10px 15px 11px 0;
+  padding: 10px 15px 12.3px 0;
   border-bottom: 1px solid #D7D7D7;
   /* font */
   font-family: 'Open Sans', sans-serif;
@@ -269,7 +280,7 @@
 }
 
 .row__title td {
-  padding-top: 30px;
+  padding-top: 32px;
   border-bottom: 1px solid #595959;
   /* font */
   font-family: 'Open Sans', sans-serif;
@@ -282,7 +293,7 @@
 }
 
 td:first-child {
-  width: 57.4%;
+  width: 57.3%;
 }
 
 td:nth-child(2) {
@@ -316,9 +327,13 @@ td:nth-child(2) {
   align-items: center;
 }
 
+.contact__img {
+  margin-right: 17px;
+}
+
 .contact__text {
   width: 68%;
-  margin: 50px 0 13px;
+  margin: 48px 0 12px;
   /* font */
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -345,9 +360,18 @@ td:nth-child(2) {
 }
 
 .contact__btn {
-  width: 208px;
+  width: 219px;
 }
 
 .contact__btn > span {
   letter-spacing: -0.01em;
+}
+
+
+/* footer */
+
+.footer__content {
+  position: relative;
+  height: 887px;
+  padding: 41px 0 23px;
 }
