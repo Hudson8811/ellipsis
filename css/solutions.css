@@ -186,7 +186,6 @@
     height: 1000px;
   }
 }
-
 @media (max-width: 480px) {
   .footer__content {
     height: 1050px;
