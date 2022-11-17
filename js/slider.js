@@ -29,6 +29,20 @@ paginArrowR.addEventListener('click', (e) => {
 
 // *********************** FUNC
 
+function RemoveDisableBtns() {
+  paginArrowL.classList.remove('disable')
+  paginArrowR.classList.remove('disable')
+}
+
+function AddDisableBtns() {
+  if (slideIndex <= 1) {
+    paginArrowL.classList.add('disable')
+  }
+  if (slideIndex >= slidesTotal) {
+    paginArrowR.classList.add('disable')
+  }
+}
+
 function CheckIndex() {
   if (slideIndex < 1) slideIndex = slidesTotal
   if (slideIndex > slidesTotal) slideIndex = 1
@@ -54,7 +68,9 @@ function ShowSlidesTotal() {
 
 function ShowSlide() {
   ShowSlidesNum()
-
+  RemoveDisableBtns()
+  AddDisableBtns()
+  
   for (let i = 0; i < slidesTotal; i++) {
     if (slides[i].classList.contains('_flex') && i != slideIndex-1) {
       slides[i].classList.remove('_flex')
@@ -65,4 +81,6 @@ function ShowSlide() {
 }
 
 ShowSlidesTotal()
+RemoveDisableBtns()
+AddDisableBtns()
 ShowSlide()

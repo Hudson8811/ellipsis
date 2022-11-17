@@ -11,7 +11,10 @@
 .bg-full__indevelopment{
 	background: url(../img/indevelopment__bg.png) center/cover no-repeat;
 }
-.bg-full__indevelopment .header.header-indevelopment:before{display:none}
+.bg-full__indevelopment .header.header-indevelopment:before{
+  display:none
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -428,7 +431,7 @@
 }
 
 .header__btn > span {
-  text-align: left;
+  text-align: center;
   margin-left: 3px;
   letter-spacing: -0.015em;
 }
@@ -729,6 +732,10 @@
   transition: transform 0.3s;
 }
 
+.pagination__arrow.disable {
+  opacity: 0.35;
+}
+
 .arrow__left {
   margin-right: 12px;
 }
@@ -757,6 +764,8 @@
   color: #777777;
 }
 
+
+/* SLIDER-SWIPER */
 
 ._arrows {
   position: relative;
@@ -1298,9 +1307,9 @@
   color: #FFFFFF;
 }
 
-.swip-carousel-item__link:hover {
+/* .swip-carousel-item__link:hover {
   text-decoration: underline;
-}
+} */
 
 .swip-access__btn {
   display: block;

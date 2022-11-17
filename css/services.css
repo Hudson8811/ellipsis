@@ -241,6 +241,7 @@
   position: absolute;
   bottom: 21px;
   padding: 6px 30px;
+  color: var(--color-btn);
 }
 @media(max-width: 992px) {
   .map__btn {
