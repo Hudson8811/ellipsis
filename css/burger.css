@@ -304,7 +304,7 @@
 
   /* .tab__link.active */
   .swiper-pagination-bullet-active > a {
-    border-bottom-color: #ffd335 !important;
+    border-bottom-color: #F29849 !important;
   }
 
   /* .tab__link:not(.active):hover */

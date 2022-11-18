@@ -282,7 +282,7 @@
 }
 
 .tab__link.active {
-  border-bottom-color: #ffd335;
+  border-bottom-color: #F29849;
 }
 
 .tab__link:not(.active):hover {
@@ -1453,7 +1453,6 @@
   color: #222222;
   margin-top: 6px;
   margin-bottom: 6px;
-  max-height: 48px;
   overflow: hidden;
 }
 
@@ -1461,8 +1460,8 @@
   line-height: 24px;
   letter-spacing: -0.01em;
   color: #595959;
-  max-height: 220px;
   overflow: hidden;
+  margin-bottom: 12px;
 }
 @media (max-width: 768px) {
   .blog-item__text {
@@ -1478,7 +1477,7 @@
 }
 
 .community__btn {
-  color: #FFD335;
+  color: #F29849;
   margin-top: auto;
 }
 
@@ -1488,7 +1487,7 @@
 
 .community__btn > span::before {
   height: 1px;
-  background-color: #FFD335;
+  background-color: #F29849;
 }
 
 .community__btn > span:after {
@@ -1719,12 +1718,12 @@
 
 /* при наведении курсора */
 .input-group__checkbox:not(:disabled):not(:checked) + .input-group__label_text:hover::before {
-  border-color: #FFC235;
+  border-color: #F29849;
 }
 /* для активного состояния */
 .input-group__checkbox:not(:disabled):active + .input-group__label_text::before {
-  background-color: #ffc235;
-  border-color: #FFC235;
+  background-color: #F29849;
+  border-color: #F29849;
 }
 /* в фокусе */
 .input-group__checkbox:focus+.input-group__label_text::before {
@@ -1732,7 +1731,7 @@
 }
 /* в фокусе и не в состоянии checked */
 .input-group__checkbox:focus:not(:checked) + .input-group__label_text::before {
-  border-color: #FFC235;
+  border-color: #F29849;
 }
 /* в состоянии disabled */
 .input-group__checkbox:disabled + .input-group__label_text::before {
