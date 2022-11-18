@@ -148,7 +148,7 @@
 
   .mobile-item__wrapper {
     width: 80%;
-    padding: 0 12px;
+    padding: 0;
   }
 
   .mobile-item__select {
@@ -249,7 +249,7 @@
 
   .dropdown__tab {
     min-width: 0 !important;
-    padding-top: 10px !important;
+    padding: 10px 0 0 !important;
   }
 
   .dropdown__section_mobile {
@@ -264,7 +264,7 @@
 
   .swiper-pagination {
     overflow-y: hidden;
-    overflow-x: scroll;
+    overflow-x: hidden;
     scrollbar-width: none;
   }
 
@@ -277,10 +277,13 @@
     display: initial;
     width: auto;
     height: auto;
-    margin-right: 40px !important;
+    margin-right: 30px !important;
     background-color: transparent;
     border-radius: 0;
     opacity: 1;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    text-align: left;
   }
   
   /* .tab__link */
