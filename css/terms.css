@@ -1,0 +1,52 @@
+/* terms */
+
+.header__title {
+  width: auto;
+}
+
+.header__title_caption {
+  /* font */
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+
+/* TERMS */
+
+.terms {
+  padding: 50px 0 0;
+}
+
+.terms a {
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.terms__text,
+.terms__text_list {
+  padding-bottom: 20px;
+  /* font */
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: #4D4D4D;
+}
+
+.terms__text_bold {
+  font-weight: 700;
+}
+
+.terms__taxt_title {
+  text-transform: uppercase;
+}
+
+.terms__text_list {
+  padding-left: 20px;
+}
