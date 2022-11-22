@@ -759,18 +759,26 @@ body.bg-full {
 }
 
 .header-user .header__banner-user {
-  margin-top: 35px;
-  padding-top: 35px;
+  margin-top: 0px;
   position: relative;
 }
 
-.header-user .header__banner-user::before {
+/* .header-user .header__banner-user::before {
   content: '';
   position: absolute;
   top: 0;
-  left: -165px;
+  left: -10%;
   right: -165px;
   height: 1px;
+  background-color: #ffffff;
+} */
+
+.header__line {
+  content: '';
+  width: 100%;
+  height: 1px;
+  margin-top: 40px;
+  margin-bottom: 33px;
   background-color: #ffffff;
 }
 

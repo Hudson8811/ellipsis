@@ -3,6 +3,16 @@
 .header__title {
   width: auto;
 }
+@media (max-width: 480px) {
+  .header__title {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header__title_main {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
 
 .header__title_caption {
   /* font */
@@ -43,7 +53,7 @@
   font-weight: 700;
 }
 
-.terms__taxt_title {
+.terms__text_title {
   text-transform: uppercase;
 }
 
