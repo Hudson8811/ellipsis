@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
+    <meta charset="UTF-8">
+    <!-- Другие кодировки плохо поддерживаются или имеют дыры -->
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -18,9 +20,7 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/91078127" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
- 
-    <!-- Другие кодировки плохо поддерживаются или имеют дыры -->
-    <meta charset="UTF-8">
+
     <!-- Режим работы Internet Explorer -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Для мобилок -->
@@ -32,9 +32,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"> 
 
     <!-- META-ТЕГИ ДЛЯ ПОИСКОВИКОВ -->
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="robots" content="" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="">
 
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="152x152" href="./img/icons/favicon/apple-touch-icon.png">
@@ -1169,7 +1169,7 @@
                         <img class="swip-carousel-item__ico" src="./img/icons/category/finance-book.svg" alt="">
                     </div>
                     <h3 class="swip-carousel-item__title">
-                        <p class="swip-carousel-item__link">Финансы</p>
+                        <span class="swip-carousel-item__link">Финансы</span>
                     </h3>
                 </div>
             </li>
@@ -1181,7 +1181,7 @@
                         <img class="swip-carousel-item__ico" src="./img/icons/category/users.svg" alt="">
                     </div>
                     <h3 class="swip-carousel-item__title">
-                        <p class="swip-carousel-item__link" href="">Мобильность</p>
+                        <span class="swip-carousel-item__link">Мобильность</span>
                     </h3>
                 </div>
             </li>
@@ -1193,7 +1193,7 @@
                         <img class="swip-carousel-item__ico" src="./img/icons/category/user.svg" alt="">
                     </div>
                     <h3 class="swip-carousel-item__title">
-                        <p class="swip-carousel-item__link" href="">Демография</p>
+                        <span class="swip-carousel-item__link">Демография</span>
                     </h3>
                 </div>
             </li>
@@ -1205,7 +1205,7 @@
                         <img class="swip-carousel-item__ico" src="./img/icons/category/house.svg" alt="">
                     </div>
                     <h3 class="swip-carousel-item__title">
-                        <p class="swip-carousel-item__link" href="">Жилье</p>
+                        <span class="swip-carousel-item__link">Жилье</span>
                     </h3>
                 </div>
             </li>
@@ -1217,7 +1217,7 @@
                         <img class="swip-carousel-item__ico" src="./img/icons/category/road.svg" alt="">
                     </div>
                     <h3 class="swip-carousel-item__title">
-                        <p class="swip-carousel-item__link" href="">Дорожное движение</p>
+                        <span class="swip-carousel-item__link">Дорожное движение</span>
                     </h3>
                 </div>
             </li>
@@ -1229,7 +1229,7 @@
                         <img class="swip-carousel-item__ico" src="./img/icons/category/folder.svg" alt="">
                     </div>
                     <h3 class="swip-carousel-item__title">
-                        <p class="swip-carousel-item__link" href="">Точки интереса</p>
+                        <span class="swip-carousel-item__link">Точки интереса</span>
                     </h3>
                 </div>
             </li>
@@ -1241,7 +1241,7 @@
                         <img class="swip-carousel-item__ico" src="./img/icons/category/world.svg" alt="">
                     </div>
                     <h3 class="swip-carousel-item__title">
-                        <p class="swip-carousel-item__link" href="">Географии</p>
+                        <span class="swip-carousel-item__link">Географии</span>
                     </h3>
                 </div>
             </li>
@@ -1253,7 +1253,7 @@
                         <img class="swip-carousel-item__ico" src="./img/icons/category/ecology.svg" alt="">
                     </div>
                     <h3 class="swip-carousel-item__title">
-                        <p class="swip-carousel-item__link" href="">Окружающая среда</p>
+                        <span class="swip-carousel-item__link">Окружающая среда</span>
                     </h3>
                 </div>
             </li>
@@ -1265,7 +1265,7 @@
                         <img class="swip-carousel-item__ico" src="./img/icons/category/share.svg" alt="">
                     </div>
                     <h3 class="swip-carousel-item__title">
-                        <p class="swip-carousel-item__link" href="">Поведенческий</p>
+                        <span class="swip-carousel-item__link">Поведенческий</span>
                     </h3>
                 </div>
             </li>
@@ -1277,7 +1277,7 @@
                         <img class="swip-carousel-item__ico" src="./img/icons/category/big-data.svg" alt="">
                     </div>
                     <h3 class="swip-carousel-item__title">
-                        <p class="swip-carousel-item__link" href="">Производные наборы данных</p>
+                        <span class="swip-carousel-item__link">Производные наборы данных</span>
                     </h3>
                 </div>
             </li>
@@ -1379,7 +1379,7 @@
                     </div>
                     <div class="input-group">
                         <select class="input-group__input input-group__select" name="employees" id="employees" form="form-feedback" required>
-                            <option disabled selected>Выбрать...</option>
+                            <option disabled value>Выбрать...</option>
                             <option class="select__item" value="1-5">1-5</option>
                             <option class="select__item" value="5-25">5-25</option>
                             <option class="select__item" value="25-50">25-50</option>
@@ -1410,7 +1410,7 @@
 
 <!-- CONTACT US -->
 
-<section class="contact">
+<div class="contact">
     <div class="container">
         <div class="contact__wrapper">
             <span class="contact__text">Готовы увидеть, как это может работать для вашей организации?</span>
@@ -1419,7 +1419,7 @@
             </a>
         </div>
     </div>
-</section>
+</div>
 
 
 <!-- FOOTER -->
